@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https:cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-600">
+    <section class=" left-[50vh] w-[700px] h-[500px] bg-white absolute top-[60px] rounded-[20px] flex flex-col space-y-[10px] items-center">
+        <h1 class="text-2xl text-center mt-20">Welcome Back!</h1> 
+        <input type="email" placeholder="Enter Email Addres..." class=" bg-gray-100 p-2 rounded-[18px] w-[25vw] h-[40px] hover:outline-blue-500 ">
+        <input type="password" placeholder="Enter Your password" class="bg-gray-100 p-2 rounded-[18px] w-[25vw] h-[40px] hover:outline-blue-500 ">
+        <input type="button" value="Login" class="bg-blue-500 p-2 rounded-[18px] w-[25vw] h-[40px] text-white  " onclick="DashBoard()">
+        <hr class="border-20 w-[26vw] relative top-[10px] ">
+        <br>
+        <input type="button" value="G Login with Google" class="bg-red-500 p-2 rounded-[18px] w-[25vw] h-[40px] text-white " onclick="DashBoard()">
+        <input type="button" value="F Login with FaceBook" class="bg-blue-600 p-2 rounded-[18px] w-[25vw] h-[40px] text-white " onclick="DashBoard()">
+    </section>
+    <script>
+        function DashBoard(){
+            location.href = "../dashboard.html"
+        }
+    </script>
+</body>
+</html>
